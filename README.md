@@ -6,6 +6,8 @@
 
 Space Shooter game that began as a very basic game from a webinar on Game Development with Unity. At the moment I have only tested it on Windows.
 
+The built game can be found on [itch.io](https://xarisg.itch.io/space-shooter)
+
 Apart from most of the gameplay that was programmed following the tutorial I also added the following functionalities:
 1. Online Leaderboards using LootLocker.
 2. Main and Pause menus and submenus containing:
