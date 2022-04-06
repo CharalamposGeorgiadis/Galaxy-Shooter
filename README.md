@@ -2,7 +2,7 @@
 
 ***NOTE: When you open the project in Unity the default scene will be empty. You have to open the scene name "MainScene" before running the project.***
 
-***For Copyright purposes, the music tracks used in the built game are not included in this downloadable Unity project. In the "MainScene" you will have to add your own Audio to the "MusicX" childern of the "Audio/BackgroundMusic" GameObject.
+***For Copyright purposes, the music tracks used in the built game are not included in this downloadable Unity project. In the "MainScene" you will have to add your own Audio to the "MusicX" childern of the "Audio/BackgroundMusic" GameObject.***
 
 Space Shooter game that began as a very basic game tutorial from a webinar on Game Development with Unity.
 
