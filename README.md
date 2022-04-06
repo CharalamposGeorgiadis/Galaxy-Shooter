@@ -4,7 +4,7 @@
 
 ***For obvious legal reasons, the music tracks used in the built game are not included in this downloadable Unity project. In the "MainScene" you will have to add your own Audio to the "MusicX" childern of the "Audio/BackgroundMusic" GameObject.***
 
-Space Shooter game that began as a very basic game tutorial from a webinar on Game Development with Unity.
+Space Shooter game that began as a very basic game from a webinar on Game Development with Unity. At the moment I have only tested it on Windows.
 
 Apart from most of the gameplay that was programmed following the tutorial I also added the following functionalities:
 1. Online Leaderboards using LootLocker.
