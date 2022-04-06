@@ -72,8 +72,21 @@ public class Player : MonoBehaviour
     [SerializeField]
     private PlayerInputActions playerControls;
 
+    // Immunity time for when the player gets hit
+    [Tooltip("Immunity time for when the player gets hit")]
+    [SerializeField]
+    private float immunityTime;
+
+    // Frequency of player blinking while they are immune
+    [Tooltip("Frequency of player blinking while they are immune")]
+    [SerializeField]
+    private float blinkingFrequency;
+
     // Player score
     private int score;
+
+    // Original amount of score required for the player to gain one extra life
+    private int originalScoreForExtraLife;
 
     // Time passed after the last bullet was fired by the player
     private float lastFired;
@@ -89,16 +102,6 @@ public class Player : MonoBehaviour
 
     // List of booleans for the player's weapon power-up. ONLY ONE CAN BE TRUE
     readonly List<bool> weaponUpgrade = new();
-
-    // Immunity time for when the player gets hit
-    [Tooltip("Immunity time for when the player gets hit")]
-    [SerializeField]
-    private float immunityTime;
-
-    // Frequency of player blinking while they are immune
-    [Tooltip("Frequency of player blinking while they are immune")]
-    [SerializeField]
-    private float blinkingFrequency;
 
     // Current length of time that the player has been immune for
     private float currentImmuneTime;
@@ -155,6 +158,7 @@ public class Player : MonoBehaviour
         playerWidth = transform.GetComponent<SpriteRenderer>().bounds.size.x / 2;
         playerHeight = transform.GetComponent<SpriteRenderer>().bounds.size.y / 2;
         playerRenderers = new List<SpriteRenderer>(GetComponentsInChildren<SpriteRenderer>());
+        originalScoreForExtraLife = scoreForExtraLife;
     }
 
     /// <summary>
@@ -433,7 +437,7 @@ public class Player : MonoBehaviour
     {
         if (score >= scoreForExtraLife)
         {
-            scoreForExtraLife += scoreForExtraLife;
+            scoreForExtraLife += originalScoreForExtraLife;
             if (lives < 3)
             {
                 lives++;
