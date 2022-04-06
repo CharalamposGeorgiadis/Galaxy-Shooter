@@ -48,7 +48,7 @@ public class UIManager : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
 
         // Adding a random background
-        GameObject.Find("Background").GetComponent<Image>().material = backgroundImages[Random.Range(0, 3)];
+        GameObject.Find("Background").GetComponent<Image>().material = backgroundImages[Random.Range(0, backgroundImages.Count)];
 
         player = GameObject.Find("Player").GetComponent<Player>();
 
