@@ -376,9 +376,9 @@ public class Player : MonoBehaviour
     private void IncreasePlayerFireRate(float fireRateIncrease)
     {
         fireRate -= fireRateIncrease;
-        if (fireRate < 0.15f)
+        if (fireRate < 0.2f)
         {
-            fireRate = 0.15f;
+            fireRate = 0.2f;
             IncreasePlayerScore(100);
         }
     }
