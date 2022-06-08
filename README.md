@@ -1,4 +1,4 @@
-# Space-Shooter
+# Galaxy-Shooter
 
 ***NOTE: When you open the project in Unity the default scene will be empty. You have to open the scene name "MainScene" before running the project.***
 
